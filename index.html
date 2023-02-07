@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="todo-list-container">
+    
+        <!-- Application Heading -->
+      <h1 id="main-heading">TODO List</h1>
+
+      <!-- Task Entry Section -->
+      <div id="add-task-container">
+        <img
+          src="images/todo-list-icon.png"
+          alt="todo list icon"
+          id="todo-list-icon"
+        />
+
+          <input
+            type="text"
+            id="task-input-box"
+            name="task-name"
+            placeholder="Add a new task..."
+          />
+          <select id="task-category">
+            <option value="None">Category</option>
+            <option value="Work">Work</option>
+            <option value="Home">Home</option>
+            <option value="Personal">Personal</option>
+            <option value="Other">Other</option>
+          </select>
+
+        <button id="add-task-button">
+          <img src="images/add-task-icon.png" alt="add-task-button" />
+        </button>
+      </div>
+
+      <!-- Sorting Options Section -->
+      <div id="sorting-options-container">
+        <a href="#" class="selected-sorting-option" id="showAllTaskButton">All</a>
+        <a href="#" id="showPendingTaskButton">Pending</a>
+        <a href="#" id="showCompletedTaskButton">Completed</a>
+      </div>
+
+      <hr />
+
+      <!-- Task List Section - all task will add here -->
+      <div id="task-list-container">
+        <!-- <div class="indivisual-task not-completed">
+          <button class="complete-task-button"></button>
+          <p class="task-name">Hello Keval</p>
+          <span class="category-display work">Work</span>
+          <button class="delete-task"></button>
+        </div> -->
+
+        <!-- <div class="indivisual-task">
+                <button class="complete-task-button completed"></button>
+                <p class="task-name">Hello Keval</p>
+                <span class="category-display other">Other</span>
+                <button class="delete-task"></button>
+            </div> -->
+
+        <!-- <div class="indivisual-task hidden">
+                <button class="complete-task-button completed"></button>
+                <p class="task-name">Hello Keval hidden</p>
+                <span class="category-display personal">Personal</span>
+                <button class="delete-task"></button>
+            </div> -->
+      </div>
+
+      <hr />
+
+      <!-- Additional Features Section -->
+      <div id="additional-features">
+        <p id="task-counter"><span id="counter">0</span> Tasks Left</p>
+        <button id="CompleteAllButton">Complete All</button>
+        <button id="ClearCompletedButton">Clear Completed</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
